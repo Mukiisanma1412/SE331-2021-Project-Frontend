@@ -26,7 +26,7 @@
               @click="vaccines"
               class="page-link"
               id="page-next"
-              :to="{ name: 'VaccineDetail', params: { Vid: people.Vaccine } }"
+              :to="{ name: 'VaccineDetail', params: { Vid: people.vaccine.id } }"
               >Vaccine's detail</router-link
             >
           </li>

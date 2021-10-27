@@ -26,14 +26,14 @@
                 {{ people.hometown }}
               </div>
             </div> -->
-<!-- 
-            <div class="row">
+
+            <!-- <div class="row">
               <div class="col">Vaccine :</div>
 
               <div class="col-8">
-                {{ people.Vaccinename }}
+                {{ vaccine.name }}
               </div>
-            </div>
+            </div> -->
 
             <div class="row">
               <div class="col">Status :</div>
@@ -45,7 +45,7 @@
                   doses <span class="material-icons"> check_circle </span></span
                 >
               </div>
-            </div> -->
+            </div>
 
             <div class="row">
               <div class="col">Latest vaccinated :</div>
@@ -62,7 +62,24 @@
 </template>
 
 <script>
+import EventService from "@/service/EventService.js";
+
 export default {
   props: ["people"],
+    data() {
+    return {
+      vaccine: null,
+    };
+  },
+   created() {
+
+    EventService.getVaccineDetail(this.people.vaccine.id)
+      .then((response) => {
+        this.vaccine = response.data;
+      })
+      .catch((error) => {
+       console.log(error);
+      });
+  },
 };
 </script>
