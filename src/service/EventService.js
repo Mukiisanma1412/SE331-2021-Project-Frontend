@@ -1,22 +1,22 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: process.env.VUE_APP_BACKEND_URL,
-  withCredentials: false,
+  baseURL: 'http://localhost:8080/',
+  'Access-Control-Allow-Credentials':true,
   headers: {
-    Accept: "application/json",
-    "Content-Type": "application/json",
-  },
-});
+    Accept: 'application/json',
+    'Content-Type': 'application/json'
+  }
+})
 
 export default {
   getPeoplelList(page) {
-    return apiClient.get("/people?_limit=8&_page=" + page);
+    return apiClient.get("patients?_limit=8&_page=" + page);
   },
   getPeopleDetail(id) {
-    return apiClient.get("/people/" + id);
+    return apiClient.get("patients/" + id);
   },
   getVaccineDetail(id) {
-    return apiClient.get("/vaccine/" + id);
+    return apiClient.get("/vaccines/" + id);
   },
 };

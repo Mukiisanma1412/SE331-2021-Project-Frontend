@@ -1,6 +1,6 @@
 <template>
   <tr>
-    <td colspan="8">{{ people.name }} {{ people.Surname }}</td>
+    <td colspan="8">{{ people.name }} {{ people.surname }}</td>
     <td>{{ people.status }}</td>
     <td>
       <router-link :to="{ name: 'PeopleDetail', params: { id: people.id } }">

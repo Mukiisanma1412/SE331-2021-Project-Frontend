@@ -6,7 +6,7 @@
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h4 class="card-title">{{ people.name }} {{ people.Surname }}</h4>
+          <h4 class="card-title">{{ people.name }} {{ people.surname }}</h4>
           <hr />
           <div class="container">
             <div class="row">
@@ -19,14 +19,14 @@
               </div>
             </div>
 
-            <div class="row">
+            <!-- <div class="row">
               <div class="col">Home Town :</div>
 
               <div class="col-8">
                 {{ people.hometown }}
               </div>
-            </div>
-
+            </div> -->
+<!-- 
             <div class="row">
               <div class="col">Vaccine :</div>
 
@@ -45,7 +45,7 @@
                   doses <span class="material-icons"> check_circle </span></span
                 >
               </div>
-            </div>
+            </div> -->
 
             <div class="row">
               <div class="col">Latest vaccinated :</div>
