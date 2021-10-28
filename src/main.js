@@ -7,6 +7,7 @@ import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { FontAwesomeIcon } from './plugins/font-awesome'
+import '@/service/AxiosInterceptorSetup.js'
 
 const requireComponent = require.context(
   './components',
