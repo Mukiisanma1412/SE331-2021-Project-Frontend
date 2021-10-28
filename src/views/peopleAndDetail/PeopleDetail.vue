@@ -51,7 +51,7 @@
               <div class="col">Latest vaccinated :</div>
 
               <div class="col-8">
-                {{ people.when }}
+                {{ people.vaccineDate }}
               </div>
             </div>
           </div>
