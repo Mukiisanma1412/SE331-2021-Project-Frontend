@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import NProgress from "nprogress";
+
 import PeopleLayout from "../views/PeopleLayout.vue";
 import PeopleDetail from "../views/peopleAndDetail/PeopleDetail.vue";
 import DoctorComment from "../views/peopleAndDetail/DoctorComment.vue";
