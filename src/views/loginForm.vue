@@ -1,5 +1,10 @@
 <template>
   <div class="col-md-12">
+     <div class="alert alert-info">
+            <strong>Patient</strong> - U: patient P: patient<br />
+            <strong>Administrator</strong> - U: admin P: admin<br />
+             <strong>Doctor</strong> - U: doctor P: doctor <br />
+        </div>
     <div class="card card-container">
       <img
         id="profile-img"
