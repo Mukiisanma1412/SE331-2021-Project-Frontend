@@ -7,6 +7,7 @@ import DoctorComment from "../views/peopleAndDetail/DoctorComment.vue";
 import VaccineDetail from "../views/peopleAndDetail/VaccineDetail.vue";
 import NotFound from "../views/NotFound.vue";
 import NetworkError from "../views/NetworkError.vue";
+import Login from "../views/loginForm.vue";
 
 const routes = [
   {
@@ -47,6 +48,11 @@ const routes = [
         props: true,
       },
     ],
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: Login
   },
   {
     path: "/404",
