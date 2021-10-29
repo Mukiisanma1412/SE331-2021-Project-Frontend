@@ -12,7 +12,7 @@
     <div class="row">
       <div class="col"><b>Country</b> :</div>
       <div class="col-10">
-        <p class="card-text">{{ Vaccine.Country }}</p>
+        <p class="card-text">{{ Vaccine.country }}</p>
       </div>
     </div>
   </div>
