@@ -8,7 +8,7 @@ import VaccineDetail from "../views/peopleAndDetail/VaccineDetail.vue";
 import NotFound from "../views/NotFound.vue";
 import NetworkError from "../views/NetworkError.vue";
 import Login from "../views/loginForm.vue";
-
+import GStore from "@/store"
 const routes = [
   {
     path: "/",

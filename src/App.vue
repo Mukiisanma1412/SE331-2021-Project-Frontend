@@ -3,8 +3,8 @@
     {{ GStore.flashMessage }}
   </div>
 
-   <div id="nav">
-   <nav class="navbar navbar-expand">
+  <div id="nav">
+    <nav class="navbar navbar-expand">
       <ul v-if="!GStore.currentUser" class="navbar-nav ml-auto">
         <li class="nav-item">
           <router-link to="/register" class="nav-link">
@@ -31,9 +31,7 @@
         </li>
       </ul>
     </nav>
-    
   </div>
-
 
   <link
     href="https://fonts.googleapis.com/css2?family=Material+Icons"
@@ -51,8 +49,24 @@
 </template>
 
 <script>
+import AuthService from '@/service/AuthService.js'
 export default {
   inject: ["GStore"], //<--
+
+  computed: {
+    currentUser() {
+      return AuthService.getUser();
+    },
+    isAdmin() {
+      return AuthService.hasRoles("ROLE_ADMIN");
+    },
+    isdoctor() {
+      return AuthService.hasRoles("ROLE_DCOTOR");
+    },
+    isUser() {
+      return AuthService.hasRoles("ROLE_USER");
+    },
+  },
 };
 </script>
 
