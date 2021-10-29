@@ -9,6 +9,7 @@ import VaccineDetail from "../views/peopleAndDetail/VaccineDetail.vue";
 import NotFound from "../views/NotFound.vue";
 import NetworkError from "../views/NetworkError.vue";
 import Login from "../views/loginForm.vue";
+import Register from "../views/Registration.vue";
 
 const routes = [
   {
@@ -54,6 +55,11 @@ const routes = [
     path: "/login",
     name: "Login",
     component: Login
+  },
+  {
+    path: "/register",
+    name: "Register",
+    component: Register
   },
   {
     path: "/404",
