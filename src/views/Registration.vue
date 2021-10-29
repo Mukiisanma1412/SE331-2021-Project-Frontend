@@ -61,7 +61,7 @@
 import { Form, Field, ErrorMessage } from 'vee-validate'
 import * as yup from 'yup'
 // eslint-disable-next-line
-import AuthService from '@/services/AuthService.js'
+import AuthService from '@/service/AuthService.js'
 export default {
   name: 'Register',
   components: {

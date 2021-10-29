@@ -25,6 +25,10 @@ export default {
 
     getUser() {
         return JSON.parse(localStorage.getItem('user'))
+    },
+
+    register(user){
+        console.log(user);
     }
 
 }
